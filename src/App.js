@@ -12,6 +12,11 @@ import { MENU_ITEMS, NAME, COPYRIGHT } from "./utils/constants";
 import playfairDisplay from "typeface-playfair-display";
 
 const theme = createTheme({
+  palette: {
+    background: {
+      default: "hotpink",
+    },
+  },
   typography: {
     fontFamily: '"Playfair Display", cursive',
   },
@@ -39,7 +44,7 @@ const App = () => {
     <Suspense fallback={<LinearProgress color="secondary" />}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Container maxWidth="lg" sx={{ backgroundColor: "hotpink" }}>
+        <Container maxWidth="lg">
           <Header title={NAME} image="signature.png" menuItems={MENU_ITEMS} />
           {routes}
           <Footer copyright={COPYRIGHT} />

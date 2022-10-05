@@ -1,7 +1,10 @@
 export const NAME = "Michelle Sky";
 
-export const BANNER_TITLE =
-  "Copywriter. Content strategist. Brand storyteller.";
+export const BANNER_TITLES = [
+  "Copywriter.",
+  "Content strategist.",
+  "Brand storyteller.",
+];
 
 export const BANNER_DESCRIPTION =
   "Get the world to see your product the way you want it seen";

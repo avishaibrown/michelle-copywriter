@@ -36,18 +36,21 @@ const Banner = (props) => {
             sx={{
               position: "relative",
               p: { xs: 3, md: 6 },
+              pl: { md: 0 },
             }}
             textAlign="right"
           >
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
-            >
-              {title}
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            {title.map((line) => (
+              <Typography
+                key={line}
+                component="h1"
+                variant="h3"
+                color="inherit"
+              >
+                {line}
+              </Typography>
+            ))}
+            <Typography variant="h5" color="inherit" paragraph mt={5}>
               {description}
             </Typography>
             <Button variant="contained" onClick={onButtonClick}>

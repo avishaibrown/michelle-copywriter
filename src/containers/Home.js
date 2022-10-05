@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 import Banner from "../components/Banner";
 import {
   BANNER_DESCRIPTION,
-  BANNER_TITLE,
+  BANNER_TITLES,
   MAIN_ACTION_BUTTON,
 } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <Container>
       <Banner
-        title={BANNER_TITLE}
+        title={BANNER_TITLES}
         description={BANNER_DESCRIPTION}
         image="MichelleCafe.jpg"
         buttonText={MAIN_ACTION_BUTTON}

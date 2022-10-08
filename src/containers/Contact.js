@@ -31,7 +31,12 @@ const Contact = () => {
             </Grid>
           ))}
         </Grid>
-        <Button variant="contained" size="large" endIcon={<EmailIcon />}>
+        <Button
+          variant="contained"
+          size="large"
+          endIcon={<EmailIcon />}
+          sx={{ textTransform: "none" }}
+        >
           {CONTACT.submitButton}
         </Button>
       </Grid>

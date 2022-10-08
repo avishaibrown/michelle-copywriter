@@ -53,7 +53,11 @@ const Banner = (props) => {
             <Typography variant="h5" color="inherit" paragraph mt={5}>
               {description}
             </Typography>
-            <Button variant="contained" onClick={onButtonClick}>
+            <Button
+              variant="contained"
+              onClick={onButtonClick}
+              sx={{ textTransform: "none" }}
+            >
               {buttonText}
             </Button>
           </Box>

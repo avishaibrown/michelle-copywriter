@@ -45,7 +45,11 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="lg">
-          <Header title={NAME} image="signature.png" menuItems={MENU_ITEMS} />
+          <Header
+            title={NAME}
+            image="title-signature.png"
+            menuItems={MENU_ITEMS}
+          />
           {routes}
           <Footer copyright={COPYRIGHT} />
         </Container>

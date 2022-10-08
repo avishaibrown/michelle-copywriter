@@ -20,7 +20,7 @@ const Home = () => {
       <Banner
         title={BANNER_TITLES}
         description={BANNER_DESCRIPTION}
-        image="MichelleCafe.jpg"
+        image="home-photo.jpg"
         buttonText={MAIN_ACTION_BUTTON}
         onButtonClick={onMainActionClick}
       />

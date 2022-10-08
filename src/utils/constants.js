@@ -22,7 +22,7 @@ export const ABOUT = {
   title: "About",
   description:
     "I am a copywriter, content strategist and brand storyteller. I help businesses and individuals tell their stories in a way that resonates with their audience. I have a background in journalism and have worked in the marketing industry for over 10 years. I have worked with a variety of clients from small businesses to large corporations. I have also worked with non-profit organisations and government agencies. I have a passion for writing and I love to help businesses and individuals tell their stories in a way that resonates with their audience.",
-  image: "MichelleCafe2.jpg",
+  image: "about-photo.jpg",
 };
 
 export const PORTFOLIO = {

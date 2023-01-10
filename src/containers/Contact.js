@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Container, Typography, Grid, TextField, Button } from "@mui/material";
+import { Container, Grid, TextField, Button } from "@mui/material";
+import Typography from "../components/Typography";
 import { CONTACT } from "../utils/constants";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -7,15 +8,25 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const Contact = () => {
   return (
-    <Container
-      maxWidth="xs"
-      sx={{ backgroundColor: "white", borderRadius: "4px" }}
-    >
-      <Grid container justifyContent="center" p={3}>
-        <Typography variant="h4" gutterBottom>
+    <Container component="section" sx={{ mt: 8, mb: 4 }} maxWidth={"sm"}>
+      <Grid container justifyContent="center" my={8}>
+        <Typography variant="h4" marked="center" align="center" gutterBottom>
           {CONTACT.title}
         </Typography>
-        <Grid container spacing={3} mb={3} justifyContent="center">
+      </Grid>
+      <Grid
+        container
+        spacing={3}
+        mb={3}
+        p={3}
+        justifyContent="center"
+        sx={{
+          backgroundColor: "white",
+          borderRadius: "4px",
+          maxWidth: "sm",
+        }}
+      >
+        <Grid container spacing={3} mb={3}>
           {CONTACT.fields.map((field) => (
             <Grid item xs={12} key={field.id}>
               <TextField

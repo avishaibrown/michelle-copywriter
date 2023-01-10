@@ -3,6 +3,8 @@ import CollapsedMenu from "./CollapsedMenu";
 import { Container, Toolbar, Box, Stack, Divider, Link } from "@mui/material";
 import { mobileDetected } from "../utils/util";
 
+//TODO: make menuItems more responsive
+
 const Header = (props) => {
   const { title, image, menuItems } = props;
 
@@ -21,7 +23,7 @@ const Header = (props) => {
           key={item.title}
           href={item.link}
           underline="hover"
-          color="inherit"
+          color="#2c292c"
         >
           {item.title}
         </Link>

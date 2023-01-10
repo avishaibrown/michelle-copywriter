@@ -1,21 +1,15 @@
-import * as React from "react";
 import FeaturedProjects from "../components/FeaturedProjects";
-import { Container, Typography, Grid } from "@mui/material";
+import Typography from "../components/Typography";
+import { Container } from "@mui/material";
 import { PORTFOLIO } from "../utils/constants";
-
-//TODO: Get projects from database
 
 const Portfolio = () => {
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom>
+    <Container component="section" sx={{ mt: 8, mb: 4 }}>
+      <Typography variant="h4" marked="center" align="center">
         {PORTFOLIO.title}
       </Typography>
-      <Grid container spacing={4}>
-        {PORTFOLIO.projects.map((project) => (
-          <FeaturedProjects key={project.title} project={project} />
-        ))}
-      </Grid>
+      <FeaturedProjects projects={PORTFOLIO.projects} />
     </Container>
   );
 };

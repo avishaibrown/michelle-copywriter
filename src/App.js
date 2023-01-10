@@ -11,10 +11,12 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { MENU_ITEMS, NAME, COPYRIGHT } from "./utils/constants";
 import playfairDisplay from "typeface-playfair-display";
 
+//TODO: Update background
+
 const theme = createTheme({
   palette: {
     background: {
-      default: "hotpink",
+      default: "#F5F5F6",
     },
   },
   typography: {
@@ -44,6 +46,17 @@ const App = () => {
     <Suspense fallback={<LinearProgress color="secondary" />}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        {/* <Box
+          component="img"
+          src="wallpaper.png"
+          alt="wallpaper"
+          sx={{
+            pointerEvents: "none",
+            position: "absolute",
+            top: -180,
+            opacity: 0.8,
+          }}
+        /> */}
         <Container maxWidth="lg">
           <Header
             title={NAME}

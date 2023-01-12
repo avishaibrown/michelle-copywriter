@@ -112,24 +112,32 @@ export const CONTACT = {
       id: "name",
       name: "name",
       label: "Name",
+      autoFocus: true,
       required: true,
+      error: "Please enter a name",
     },
     {
       id: "email",
       name: "email",
       label: "Email",
+      autoFocus: false,
       required: true,
+      error: "Please enter a valid email address",
     },
     {
       id: "message",
       name: "message",
       label: "Message",
+      autoFocus: false,
       multiline: true,
       rows: 4, // only applies if multiline is true
       required: true,
+      error: "Please enter a message (1000 characters or less)",
     },
   ],
   submitButton: "Send",
 };
+
+export const ENQUIRY_SUCCESS_MSG = "Your enquiry has been sent. Thank you!";
 
 export const COPYRIGHT = "Copyright © AB Development";

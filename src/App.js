@@ -1,5 +1,6 @@
 import Home from "./containers/Home";
 import About from "./containers/About";
+import Services from "./containers/Services";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
 import Header from "./components/Header";
@@ -36,8 +37,9 @@ const App = () => {
     <Routes>
       <Route path={MENU_ITEMS[0].link} exact element={<Home />} />
       <Route path={MENU_ITEMS[1].link} element={<About />} />
-      <Route path={MENU_ITEMS[2].link} element={<Portfolio />} />
-      <Route path={MENU_ITEMS[3].link} element={<Contact />} />
+      <Route path={MENU_ITEMS[2].link} element={<Services />} />
+      <Route path={MENU_ITEMS[3].link} element={<Portfolio />} />
+      <Route path={MENU_ITEMS[4].link} element={<Contact />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

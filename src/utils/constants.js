@@ -1,28 +1,95 @@
 export const NAME = "Michelle Sky";
-
-export const BANNER_TITLES = [
-  "Copywriter.",
-  "Content strategist.",
-  "Brand storyteller.",
-];
-
-export const BANNER_DESCRIPTION =
-  "Get the world to see your product the way you want it seen";
-
-export const MAIN_ACTION_BUTTON = "Let's Talk";
-
 export const MENU_ITEMS = [
   { title: "Home", link: "/" },
   { title: "About", link: "/about" },
+  { title: "Services", link: "/services" },
   { title: "Portfolio", link: "/portfolio" },
   { title: "Contact", link: "/contact" },
 ];
+export const COPYRIGHT = "Copyright © AB Development";
+
+export const HOME = {
+  bannerTitles: ["Tell your story.", "Share your message."],
+  bannerDescription: "Creative, punchy copy for brands & businesses",
+  bannerButton: "Enquire",
+  aboutDescription: [
+    "Hi, I’m Michelle.",
+    "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
+  ],
+  aboutButton: "Learn More",
+};
 
 export const ABOUT = {
   title: "About",
-  description:
-    "I am a copywriter, content strategist and brand storyteller. I help businesses and individuals tell their stories in a way that resonates with their audience. I have a background in journalism and have worked in the marketing industry for over 10 years. I have worked with a variety of clients from small businesses to large corporations. I have also worked with non-profit organisations and government agencies. I have a passion for writing and I love to help businesses and individuals tell their stories in a way that resonates with their audience.",
+  description: [
+    "With an academic background in Literature, History and Psychology, I bring a thorough and meticulous approach to copywriting, editing, proofreading and research. My insight into the human condition translates perfectly to understanding what drives consumers and writing for a wide variety of audiences.",
+    "I have a passion for creating highly engaging written content, specialising in short and long form writing for websites, EDMs, blog posts, brand books, press releases, Google ads, social media ads, and social media copy.",
+    "I love to work closely with clients, and take the time to truly discover your brand and business, its unique market position, as well as your goals and objectives for the future. This enables me to effectively capture and convey your message across a variety of mediums.",
+    "Work with me today to tell your brand's story and get your message across.",
+    "I will weave a compelling brand narrative so your audience knows exactly who you are and what you stand for, and keeps coming back for more.",
+    "Together, we’ll take your copy to the next level.",
+    "Get in touch today to discuss your project.",
+  ],
   image: "about-photo.jpg",
+  button: "Contact Michelle",
+};
+
+export const SERVICES = {
+  title: "Copywriting Services",
+  blurb: [
+    "As a copywriter, I can manage any copywriting needs across your business.",
+    "Whether you’re looking for brand new copy for a one-off copy project, or for regular, ongoing copy to be supplied, you’re in the right place.",
+    "I develop content across:",
+  ],
+  mediums: [
+    {
+      medium: "Websites",
+      description: [
+        "The words on your website matter - a lot. Your message must be clear, compelling and distinct.",
+        "As your copywriter, I can liaise with web designers to create new information architecture and copy for your website.",
+        "Your website will feature intuitive, UX-optimised copy that gives visitors the answers they’re looking for, fast. Content will also include Google-friendly keywords, seamlessly integrated, helping you get noticed online.",
+      ],
+    },
+    {
+      medium: "Social Media",
+      description: [
+        "Social media is our go-to for news, information and updates across business, industry and commerce. ",
+        "An aligned social media presence is essential for promoting your brand and mission.",
+        "Social media copywriting can include content strategy creation, content planning and content writing across social media platforms including Instagram, Facebook, LinkedIn, and TikTok.",
+        "Your copywriter can liaise with branding agencies, graphic designers, and/or your marketing team to provide copy and schedule content optimised for each platform.",
+      ],
+    },
+    {
+      medium: "Articles & Blogs",
+      description: [
+        "Publishing articles and blog posts on your website showcases your expertise, builds trust with audiences and positions you as a thought-leader in your industry. It’s also important for building Google rankings so that you appear at the top of the search results pile.",
+        "As your copywriter, I can develop a series of blogs and articles to promote your brand and spark interest in your company’s values, mission, and key offerings. This includes researching, writing, editing, and optimising SEO for publication on the website.",
+      ],
+    },
+    {
+      medium: "Ad Copy",
+      description: [
+        "Short form copy for ads needs to capture your message and make an impact in a short time frame, whether it’s through Google or the social media scroll.",
+        "Content creation for Google ads and social media ad copy will help promote your brand, products and offerings to a wider audience. This includes researching keywords to ensure ads are optimised for your audience and market category. It can also include working closely with digital marketing specialists and graphic designers to create ads in line with branding and tone of voice.",
+      ],
+    },
+    {
+      medium: "Email Newsletters",
+      description: [
+        "Imagine email newsletters that people actually want in their inbox. The key here is not to spam or overload an inbox but to deliver relevant, engaging and exciting news, offers and updates.",
+        "Email newsletter copywriting includes developing an email strategy and content calendar, liaising with your branding agency and/or graphic designers to create an email newsletter template, researching, writing, and editing e-newsletters monthly or fortnightly.",
+      ],
+    },
+    {
+      medium: "Podcast",
+      description: [
+        "The podcast space is the new frontier for increasing visibility for your brand and building your audience. Reach people on a greater scale, and a more intimate setting - in their cars, homes or on their evening walk.",
+        "Podcast copywriting services include developing a long term podcast content plan, researching and creating podcast episode topics, content pillars, as well as researching guests, creating show notes, transcripts, and time stamps for publication via podcasting streamers and YouTube.",
+      ],
+    },
+  ],
+  closingRemarks:
+    "Choose the copywriting and content creation services you want to prioritise right now. We can always add on at a later point!",
 };
 
 export const PORTFOLIO = {
@@ -106,7 +173,7 @@ export const PORTFOLIO = {
 };
 
 export const CONTACT = {
-  title: "Contact",
+  title: "Got a project? Drop me a line!",
   fields: [
     {
       id: "name",
@@ -114,7 +181,7 @@ export const CONTACT = {
       label: "Name",
       autoFocus: true,
       required: true,
-      error: "Please enter a name",
+      error: "Please enter your name",
     },
     {
       id: "email",
@@ -136,8 +203,5 @@ export const CONTACT = {
     },
   ],
   submitButton: "Send",
+  enquirySuccessMsg: "Your enquiry has been sent. Thank you!",
 };
-
-export const ENQUIRY_SUCCESS_MSG = "Your enquiry has been sent. Thank you!";
-
-export const COPYRIGHT = "Copyright © AB Development";

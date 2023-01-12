@@ -9,7 +9,7 @@ import {
 import Typography from "../components/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "emailjs-com";
-import { CONTACT, ENQUIRY_SUCCESS_MSG } from "../utils/constants";
+import { CONTACT } from "../utils/constants";
 import { updateObject, checkValidity } from "../utils/util";
 
 //TODO: Connect form to email service
@@ -168,7 +168,7 @@ const Contact = () => {
             </Button>
           </form>
         ) : (
-          <Typography>{ENQUIRY_SUCCESS_MSG}</Typography>
+          <Typography>{CONTACT.enquirySuccessMsg}</Typography>
         )}
       </Grid>
     </Container>

@@ -1,3 +1,19 @@
+import {
+  Email,
+  Web,
+  Tag,
+  RssFeed,
+  Newspaper,
+  AlternateEmail,
+  Podcasts,
+  People,
+  DeveloperBoard,
+  Edit,
+  FitnessCenter,
+  Celebration,
+  Business,
+} from "@mui/icons-material";
+
 export const NAME = "Michelle Sky";
 export const MENU_ITEMS = [
   { title: "Home", link: "/" },
@@ -12,11 +28,72 @@ export const HOME = {
   bannerTitles: ["Tell your story.", "Share your message."],
   bannerDescription: "Creative, punchy copy for brands & businesses",
   bannerButton: "Enquire",
+  servicesTitle: "What We Do",
+  servicesItems: [
+    {
+      title: "Website Content",
+      icon: <Web fontSize="large" />,
+    },
+    {
+      title: "Digital Marketing Content",
+      icon: <AlternateEmail fontSize="large" />,
+    },
+    {
+      title: "Traditional Marketing Content",
+      icon: <Newspaper fontSize="large" />,
+    },
+    {
+      title: "Social Media Content",
+      icon: <Tag fontSize="large" />,
+    },
+    {
+      title: "Business Communications",
+      icon: <Business fontSize="large" />,
+    },
+  ],
   aboutDescription: [
     "Hi, I’m Michelle.",
     "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
   ],
   aboutButton: "Learn More",
+  processTitle: "The Process",
+  processSteps: [
+    {
+      title: "Enquire",
+      description:
+        "Enquire via my contact form and tell me all about your business. You can find it in the top right corner of your screen.",
+      icon: <Email fontSize="large" />,
+    },
+    {
+      title: "Let's Talk",
+      description:
+        "Let's hop on a call and get to know each other. I want to hear all about your business and your vision, and really get to know you and your project.",
+      icon: <People fontSize="large" />,
+    },
+    {
+      title: "Onboarding",
+      description:
+        "Once we’ve spoken and secured a booking, you can expect to find a welcome email outlining the process and next steps in your inbox. You’ll typically supply me with any existing copy, we’ll work on a copy brief and we’ll set a timeline together.",
+      icon: <DeveloperBoard fontSize="large" />,
+    },
+    {
+      title: "Writing",
+      description:
+        "This is the fun part where you get to sit back and relax, as I get started on writing your new and improved copy.",
+      icon: <FitnessCenter fontSize="large" />,
+    },
+    {
+      title: "Editing",
+      description:
+        "Once the first round of writing is complete, you and your team can provide feedback and comments, which will be integrated into the revised copy.",
+      icon: <Edit fontSize="large" />,
+    },
+    {
+      title: "Completion",
+      description: "We're all done! Your new copy is ready for its big reveal.",
+      icon: <Celebration fontSize="large" />,
+    },
+  ],
 };
 
 export const ABOUT = {
@@ -34,6 +111,13 @@ export const ABOUT = {
   button: "Contact Michelle",
 };
 
+export const WEBSITES = "Websites";
+export const SOCIAL_MEDIA = "Social Media";
+export const ARTICLES_AND_BLOGS = "Articles & Blogs";
+export const AD_COPY = "Ad Copy";
+export const EMAIL_NEWSLETTERS = "Email Newsletters";
+export const PODCASTS = "Podcasts";
+
 export const SERVICES = {
   title: "Copywriting Services",
   blurb: [
@@ -43,49 +127,55 @@ export const SERVICES = {
   ],
   mediums: [
     {
-      medium: "Websites",
+      title: WEBSITES,
       description: [
-        "The words on your website matter - a lot. Your message must be clear, compelling and distinct.",
-        "As your copywriter, I can liaise with web designers to create new information architecture and copy for your website.",
+        "The words on your website matter - a lot. Your message must be clear, compelling and distinct. ",
+        "As your copywriter, I can liaise with web designers to create new information architecture and copy for your website. ",
         "Your website will feature intuitive, UX-optimised copy that gives visitors the answers they’re looking for, fast. Content will also include Google-friendly keywords, seamlessly integrated, helping you get noticed online.",
       ],
+      icon: <Web fontSize="large" />,
     },
     {
-      medium: "Social Media",
+      title: SOCIAL_MEDIA,
       description: [
         "Social media is our go-to for news, information and updates across business, industry and commerce. ",
-        "An aligned social media presence is essential for promoting your brand and mission.",
-        "Social media copywriting can include content strategy creation, content planning and content writing across social media platforms including Instagram, Facebook, LinkedIn, and TikTok.",
+        "An aligned social media presence is essential for promoting your brand and mission. ",
+        "Social media copywriting can include content strategy creation, content planning and content writing across social media platforms including Instagram, Facebook, LinkedIn, and TikTok. ",
         "Your copywriter can liaise with branding agencies, graphic designers, and/or your marketing team to provide copy and schedule content optimised for each platform.",
       ],
+      icon: <Tag fontSize="large" />,
     },
     {
-      medium: "Articles & Blogs",
+      title: ARTICLES_AND_BLOGS,
       description: [
-        "Publishing articles and blog posts on your website showcases your expertise, builds trust with audiences and positions you as a thought-leader in your industry. It’s also important for building Google rankings so that you appear at the top of the search results pile.",
+        "Publishing articles and blog posts on your website showcases your expertise, builds trust with audiences and positions you as a thought-leader in your industry. It’s also important for building Google rankings so that you appear at the top of the search results pile. ",
         "As your copywriter, I can develop a series of blogs and articles to promote your brand and spark interest in your company’s values, mission, and key offerings. This includes researching, writing, editing, and optimising SEO for publication on the website.",
       ],
+      icon: <RssFeed fontSize="large" />,
     },
     {
-      medium: "Ad Copy",
+      title: AD_COPY,
       description: [
-        "Short form copy for ads needs to capture your message and make an impact in a short time frame, whether it’s through Google or the social media scroll.",
+        "Short form copy for ads needs to capture your message and make an impact in a short time frame, whether it’s through Google or the social media scroll. ",
         "Content creation for Google ads and social media ad copy will help promote your brand, products and offerings to a wider audience. This includes researching keywords to ensure ads are optimised for your audience and market category. It can also include working closely with digital marketing specialists and graphic designers to create ads in line with branding and tone of voice.",
       ],
+      icon: <Newspaper fontSize="large" />,
     },
     {
-      medium: "Email Newsletters",
+      title: EMAIL_NEWSLETTERS,
       description: [
-        "Imagine email newsletters that people actually want in their inbox. The key here is not to spam or overload an inbox but to deliver relevant, engaging and exciting news, offers and updates.",
+        "Imagine email newsletters that people actually want in their inbox. The key here is not to spam or overload an inbox but to deliver relevant, engaging and exciting news, offers and updates. ",
         "Email newsletter copywriting includes developing an email strategy and content calendar, liaising with your branding agency and/or graphic designers to create an email newsletter template, researching, writing, and editing e-newsletters monthly or fortnightly.",
       ],
+      icon: <AlternateEmail fontSize="large" />,
     },
     {
-      medium: "Podcast",
+      title: PODCASTS,
       description: [
-        "The podcast space is the new frontier for increasing visibility for your brand and building your audience. Reach people on a greater scale, and a more intimate setting - in their cars, homes or on their evening walk.",
+        "The podcast space is the new frontier for increasing visibility for your brand and building your audience. Reach people on a greater scale, and a more intimate setting - in their cars, homes or on their evening walk. ",
         "Podcast copywriting services include developing a long term podcast content plan, researching and creating podcast episode topics, content pillars, as well as researching guests, creating show notes, transcripts, and time stamps for publication via podcasting streamers and YouTube.",
       ],
+      icon: <Podcasts fontSize="large" />,
     },
   ],
   closingRemarks:

@@ -3,7 +3,7 @@ import About from "./containers/About";
 import Services from "./containers/Services";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./containers/Contact";
-import Header from "./components/Header";
+import AppBar from "./components/AppBar";
 import Footer from "./components/Footer";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Suspense } from "react";
@@ -60,7 +60,7 @@ const App = () => {
           }}
         /> */}
         <Container maxWidth="lg">
-          <Header
+          <AppBar
             title={NAME}
             image="title-signature.png"
             menuItems={MENU_ITEMS}

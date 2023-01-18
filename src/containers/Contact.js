@@ -47,6 +47,11 @@ const Contact = () => {
     },
   });
 
+  //scroll to top when page is navigated to
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     setIsFormValid(
       contactForm.name.valid &&

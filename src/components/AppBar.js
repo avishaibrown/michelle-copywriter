@@ -1,11 +1,10 @@
-import * as React from "react";
 import CollapsedMenu from "./CollapsedMenu";
 import { Container, Toolbar, Box, Stack, Divider, Link } from "@mui/material";
 import { mobileDetected } from "../utils/util";
 
 //TODO: make menuItems more responsive
 
-const Header = (props) => {
+const AppBar = (props) => {
   const { title, image, menuItems } = props;
 
   const menuToDisplay = mobileDetected() ? (
@@ -49,4 +48,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default AppBar;

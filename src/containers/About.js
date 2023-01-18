@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useEffect } from "react";
 import { Container, Button } from "@mui/material";
 import Typography from "../components/Typography";
 import { ABOUT } from "../utils/constants";
@@ -8,17 +8,18 @@ import { useNavigate } from "react-router";
 const About = () => {
   const navigate = useNavigate();
 
+  //scroll to top when page is navigated to
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <Container
-      component="section"
-      sx={{ mt: 8, mb: 4, textAlign: "center" }}
-      maxWidth={"md"}
-    >
+    <Container component="section" sx={{ mt: 8, mb: 4, textAlign: "center" }}>
       <Typography variant="h4" marked="center" gutterBottom>
         {ABOUT.title}
       </Typography>
-      {ABOUT.description.map((paragraph) => (
-        <Typography variant="body1" m={5}>
+      {ABOUT.description.map((paragraph, index) => (
+        <Typography variant="body1" m={5} key={index}>
           {paragraph}
         </Typography>
       ))}

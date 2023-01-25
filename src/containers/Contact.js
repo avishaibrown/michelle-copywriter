@@ -1,18 +1,11 @@
 import { useState, useEffect } from "react";
-import {
-  Container,
-  Grid,
-  TextField,
-  Button,
-  CircularProgress,
-} from "@mui/material";
+import { Container, Grid, TextField, CircularProgress } from "@mui/material";
+import Button from "../components/Button";
 import Typography from "../components/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "emailjs-com";
 import { CONTACT } from "../utils/constants";
 import { updateObject, checkValidity } from "../utils/util";
-
-//TODO: Connect form to email service
 
 const Contact = () => {
   const [isFormValid, setIsFormValid] = useState(false);
@@ -111,15 +104,27 @@ const Contact = () => {
   };
 
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4 }} maxWidth={"sm"}>
-      <Grid container justifyContent="center" my={8}>
-        <Typography variant="h4" marked="center" align="center" gutterBottom>
+    <Container
+      component="section"
+      maxWidth={"sm"}
+      sx={{
+        my: { xs: 20, md: 30 },
+        alignItems: "center",
+        textAlign: "center",
+      }}
+    >
+      <Grid container justifyContent="center" my={5}>
+        <Typography
+          variant="h2"
+          marked="center"
+          gutterBottom
+          sx={{ fontSize: { xs: "3rem", md: "3.75rem" } }}
+        >
           {CONTACT.title}
         </Typography>
       </Grid>
       <Grid
         container
-        spacing={3}
         mb={3}
         p={3}
         justifyContent="center"

@@ -8,7 +8,13 @@ export const HomeServices = (props) => {
     <Box component="section" sx={{ display: "flex", overflow: "hidden" }}>
       <Grid container spacing={5} sx={{ my: "10px" }}>
         {items.map((item, index) => (
-          <Grid item xs={12} md={largeTiles ? 6 : 4} key={index}>
+          <Grid
+            item
+            xs={12}
+            md={largeTiles ? 6 : 4}
+            xl={largeTiles ? 6 : 2.4}
+            key={index}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -18,7 +24,7 @@ export const HomeServices = (props) => {
               }}
             >
               {item.icon}
-              <Typography variant="h6" sx={{ my: 5, color: "secondary.main" }}>
+              <Typography variant="h5" sx={{ my: 5, color: "secondary.main" }}>
                 {item.title}
               </Typography>
               {includeDescriptions && (

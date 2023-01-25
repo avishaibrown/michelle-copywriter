@@ -1,4 +1,4 @@
-import Home from "./containers/Home";
+import Home from "./containers/Home/Home";
 import About from "./containers/About";
 import Services from "./containers/Services";
 import Portfolio from "./containers/Portfolio";
@@ -9,24 +9,17 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import { CssBaseline, Container, LinearProgress } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { MENU_ITEMS, NAME, COPYRIGHT } from "./utils/constants";
-import playfairDisplay from "typeface-playfair-display";
-
-//TODO: Update background
+import { MENU_ITEMS, NAME, FOOTER } from "./utils/constants";
+import libreFranklin from "@fontsource/libre-franklin";
 
 const theme = createTheme({
-  palette: {
-    background: {
-      default: "#F5F5F6",
-    },
-  },
   typography: {
-    fontFamily: '"Playfair Display", cursive',
+    fontFamily: '"Libre Franklin", cursive',
   },
   overrides: {
     CssBaseline: {
       "@global": {
-        "@font-face": [playfairDisplay],
+        "@font-face": [libreFranklin],
       },
     },
   },
@@ -48,25 +41,14 @@ const App = () => {
     <Suspense fallback={<LinearProgress color="secondary" />}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        {/* <Box
-          component="img"
-          src="wallpaper.png"
-          alt="wallpaper"
-          sx={{
-            pointerEvents: "none",
-            position: "absolute",
-            top: -180,
-            opacity: 0.8,
-          }}
-        /> */}
-        <Container maxWidth="lg">
-          <AppBar
-            title={NAME}
-            image="title-signature.png"
-            menuItems={MENU_ITEMS}
-          />
+        <Container disableGutters maxWidth={false}>
+          <AppBar title={NAME} image="title-logo.png" menuItems={MENU_ITEMS} />
           {routes}
-          <Footer copyright={COPYRIGHT} />
+          <Footer
+            image={FOOTER.image}
+            imageAlt={FOOTER.imageAlt}
+            copyright={FOOTER.copyright}
+          />
         </Container>
       </ThemeProvider>
     </Suspense>

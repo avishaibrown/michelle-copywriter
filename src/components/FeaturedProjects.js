@@ -20,7 +20,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   height: "40vh",
   [theme.breakpoints.down("md")]: {
     width: "100% !important",
-    height: 100,
+    height: 400,
   },
   "&:hover": {
     zIndex: 1,
@@ -32,7 +32,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     opacity: 0,
   },
   "&:hover .imageTitle": {
-    border: "4px solid currentColor",
+    border: "8px solid currentColor",
   },
   "& .imageTitle": {
     position: "relative",
@@ -96,7 +96,7 @@ const FeaturedProjects = (projects) => {
           >
             <Typography
               component="h3"
-              variant="h6"
+              variant="h4"
               color="inherit"
               className="imageTitle"
             >

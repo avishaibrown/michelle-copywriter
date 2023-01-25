@@ -4,8 +4,6 @@ import Typography from "../components/Typography";
 import { Container } from "@mui/material";
 import { SERVICES } from "../utils/constants";
 
-//TODO: Continue on Services page adding each medium and description
-
 const Services = () => {
   //scroll to top when page is navigated to
   useEffect(() => {
@@ -13,12 +11,24 @@ const Services = () => {
   }, []);
 
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Typography variant="h4" marked="center" align="center" mb={5}>
+    <Container component="section" sx={{ my: { xs: 20, md: 30 } }}>
+      <Typography
+        variant="h2"
+        marked="center"
+        gutterBottom
+        textAlign="center"
+        sx={{ fontSize: { xs: "3rem", md: "3.75rem" }, mb: 10 }}
+      >
         {SERVICES.title}
       </Typography>
       {SERVICES.blurb.map((paragraph, index) => (
-        <Typography variant="body1" m={3} key={index}>
+        <Typography
+          sx={{
+            typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
+          }}
+          m={5}
+          key={index}
+        >
           {paragraph}
         </Typography>
       ))}
@@ -27,7 +37,12 @@ const Services = () => {
         largeTiles={true}
         includeDescriptions={true}
       />
-      <Typography variant="body1" m={3} sx={{ fontWeight: "bold" }}>
+      <Typography
+        m={3}
+        sx={{
+          typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
+        }}
+      >
         {SERVICES.closingRemarks}
       </Typography>
     </Container>

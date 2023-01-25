@@ -1,8 +1,7 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
 import { Paper } from "@mui/material";
 import {
-  Timeline,
+  Timeline as MuiTimeline,
   TimelineItem,
   TimelineSeparator,
   TimelineConnector,
@@ -11,36 +10,45 @@ import {
 } from "@mui/lab";
 import Typography from "./Typography";
 
-const useStyles = makeStyles((theme) => ({
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-}));
-
-const ProcessTimeline = (props) => {
-  const classes = useStyles();
+const Timeline = (props) => {
   const { items } = props;
 
   return (
-    <Timeline position="alternate">
+    <MuiTimeline position="alternate">
       {items.map((item, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
-            <TimelineDot color="secondary">{item.icon}</TimelineDot>
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineDot
+              color="secondary"
+              sx={{ transform: { xs: "none", md: "scale(1.5)" } }}
+            >
+              {item.icon}
+            </TimelineDot>
+            {index !== items.length - 1 && (
+              <TimelineConnector sx={{ backgroundColor: "secondary.main" }} />
+            )}
           </TimelineSeparator>
           <TimelineContent>
-            <Paper elevation={3} sx={{ padding: "30px", borderRadius: "40px" }}>
-              <Typography variant="h5" component="h1" gutterBottom>
+            <Paper
+              elevation={3}
+              sx={{ mx: { xs: 0, md: 5 }, padding: { xs: 2, md: 5 } }}
+            >
+              <Typography
+                sx={{ typography: { xs: "h6", md: "h4" } }}
+                component="h1"
+                gutterBottom
+              >
                 {item.title}
               </Typography>
-              <Typography>{item.description}</Typography>
+              <Typography sx={{ typography: { xs: "body2", md: "h6" } }}>
+                {item.description}
+              </Typography>
             </Paper>
           </TimelineContent>
         </TimelineItem>
       ))}
-    </Timeline>
+    </MuiTimeline>
   );
 };
 
-export default ProcessTimeline;
+export default Timeline;

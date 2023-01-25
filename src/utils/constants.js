@@ -22,78 +22,91 @@ export const MENU_ITEMS = [
   { title: "Portfolio", link: "/portfolio" },
   { title: "Contact", link: "/contact" },
 ];
-export const COPYRIGHT = "Copyright © AB Development";
 
 export const HOME = {
-  bannerTitles: ["Tell your story.", "Share your message."],
-  bannerDescription: "Creative, punchy copy for brands & businesses",
-  bannerButton: "Enquire",
-  servicesTitle: "What We Do",
-  servicesItems: [
-    {
-      title: "Website Content",
-      icon: <Web fontSize="large" />,
-    },
-    {
-      title: "Digital Marketing Content",
-      icon: <AlternateEmail fontSize="large" />,
-    },
-    {
-      title: "Traditional Marketing Content",
-      icon: <Newspaper fontSize="large" />,
-    },
-    {
-      title: "Social Media Content",
-      icon: <Tag fontSize="large" />,
-    },
-    {
-      title: "Business Communications",
-      icon: <Business fontSize="large" />,
-    },
-  ],
-  aboutDescription: [
-    "Hi, I’m Michelle.",
-    "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
-  ],
-  aboutButton: "Learn More",
-  processTitle: "The Process",
-  processSteps: [
-    {
-      title: "Enquire",
-      description:
-        "Enquire via my contact form and tell me all about your business. You can find it in the top right corner of your screen.",
-      icon: <Email fontSize="large" />,
-    },
-    {
-      title: "Let's Talk",
-      description:
-        "Let's hop on a call and get to know each other. I want to hear all about your business and your vision, and really get to know you and your project.",
-      icon: <People fontSize="large" />,
-    },
-    {
-      title: "Onboarding",
-      description:
-        "Once we’ve spoken and secured a booking, you can expect to find a welcome email outlining the process and next steps in your inbox. You’ll typically supply me with any existing copy, we’ll work on a copy brief and we’ll set a timeline together.",
-      icon: <DeveloperBoard fontSize="large" />,
-    },
-    {
-      title: "Writing",
-      description:
-        "This is the fun part where you get to sit back and relax, as I get started on writing your new and improved copy.",
-      icon: <FitnessCenter fontSize="large" />,
-    },
-    {
-      title: "Editing",
-      description:
-        "Once the first round of writing is complete, you and your team can provide feedback and comments, which will be integrated into the revised copy.",
-      icon: <Edit fontSize="large" />,
-    },
-    {
-      title: "Completion",
-      description: "We're all done! Your new copy is ready for its big reveal.",
-      icon: <Celebration fontSize="large" />,
-    },
-  ],
+  hero: {
+    titles: ["Tell your story.", "Share your message."],
+    description: "Creative, punchy copy for brands & businesses.",
+    image: "intro-bg.jpg",
+    button: "Enquire",
+  },
+  whatIDo: {
+    title: "What I Do",
+    items: [
+      {
+        title: "Website Content",
+        icon: <Web fontSize="large" />,
+      },
+      {
+        title: "Digital Marketing Content",
+        icon: <AlternateEmail fontSize="large" />,
+      },
+      {
+        title: "Traditional Marketing Content",
+        icon: <Newspaper fontSize="large" />,
+      },
+      {
+        title: "Social Media Content",
+        icon: <Tag fontSize="large" />,
+      },
+      {
+        title: "Business Communications",
+        icon: <Business fontSize="large" />,
+      },
+    ],
+  },
+  about: {
+    title: "Hi, I’m Michelle.",
+    description:
+      "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
+    button: "Learn More",
+    image: "about-photo.jpg",
+  },
+  process: {
+    title: "Work With Me",
+    steps: [
+      {
+        title: "Enquire",
+        description:
+          "Fill out the application form to tell me all about your project and your business. You'll find it under Contact on the top right hand corner of your screen.",
+        icon: <Email fontSize="large" />,
+      },
+      {
+        title: "Let's Talk",
+        description:
+          "We'll hop on a call. This gives us a chance to get to know each other and I can learn more in depth about your business and your vision.",
+        icon: <People fontSize="large" />,
+      },
+      {
+        title: "Onboarding",
+        description:
+          "Once we’ve spoken and secured a booking, you can expect to find a welcome email outlining the process and next steps in your inbox. You’ll typically supply me with any existing copy, we’ll work on a copy brief and we’ll set a timeline together.",
+        icon: <DeveloperBoard fontSize="large" />,
+      },
+      {
+        title: "Writing",
+        description:
+          "This is the fun part where you get to sit back and relax, as I get started on writing your new and improved copy.",
+        icon: <FitnessCenter fontSize="large" />,
+      },
+      {
+        title: "Editing",
+        description:
+          "Once the first round of writing is complete, you and your team can provide feedback and comments, which will be integrated into the revised copy.",
+        icon: <Edit fontSize="large" />,
+      },
+      {
+        title: "Completion",
+        description:
+          "We're all done! Your new copy is ready for its big reveal.",
+        icon: <Celebration fontSize="large" />,
+      },
+    ],
+  },
+  callToAction: {
+    button: "Get Punchy Copy That Sells",
+    subtitle: "Let's. Do. This. Thing.",
+  },
 };
 
 export const ABOUT = {
@@ -102,10 +115,11 @@ export const ABOUT = {
     "With an academic background in Literature, History and Psychology, I bring a thorough and meticulous approach to copywriting, editing, proofreading and research. My insight into the human condition translates perfectly to understanding what drives consumers and writing for a wide variety of audiences.",
     "I have a passion for creating highly engaging written content, specialising in short and long form writing for websites, EDMs, blog posts, brand books, press releases, Google ads, social media ads, and social media copy.",
     "I love to work closely with clients, and take the time to truly discover your brand and business, its unique market position, as well as your goals and objectives for the future. This enables me to effectively capture and convey your message across a variety of mediums.",
+  ],
+  callToAction: [
     "Work with me today to tell your brand's story and get your message across.",
     "I will weave a compelling brand narrative so your audience knows exactly who you are and what you stand for, and keeps coming back for more.",
     "Together, we’ll take your copy to the next level.",
-    "Get in touch today to discuss your project.",
   ],
   image: "about-photo.jpg",
   button: "Contact Michelle",
@@ -186,10 +200,9 @@ export const PORTFOLIO = {
   title: "Portfolio",
   projects: [
     {
-      title: "Fisher Lane Mobility",
-      url: "https://docs.google.com/presentation/d/e/2PACX-1vRFlg8Z2Q667pCSetJShkrBWEoMHo8TunItF055auceuGkq1T1Hg7AFV_0IbdtVluive8AL29FVnK5I/pub?start=true&loop=true&delayms=3000",
-      socialMedia: "https://www.instagram.com/fisherlane26/?hl=en",
-      image: "./images/FisherLaneMobilityLogo.png",
+      title: "Luson",
+      url: "https://clydenorth.luson.com.au/",
+      image: "./images/LusonLogo.png",
       width: "40%",
     },
     {
@@ -203,6 +216,26 @@ export const PORTFOLIO = {
       url: "https://docs.google.com/presentation/d/e/2PACX-1vTsdISjLPiqsfWa8-DKxtQMMSztQC_1mfbAFJeu7jU5ouU8kftECUtz2UIrsJ-S_YxQrg54g31w_bJf/pub?start=true&loop=true&delayms=3000",
       image: "./images/ModernTimesLogo.png",
       width: "40%",
+    },
+    {
+      title: "Splashbox",
+      url: "https://www.splashbox.com.au/",
+      image: "./images/SplashboxLogo.png",
+      width: "38%",
+    },
+    {
+      title: "Contact Me",
+      url: "https://www.contactme.net.au/",
+      socialMedia: "https://www.instagram.com/contactmeau/?hl=en",
+      image: "./images/ContactMeLogo.png",
+      width: "38%",
+    },
+    {
+      title: "Fisher Lane Mobility",
+      url: "https://docs.google.com/presentation/d/e/2PACX-1vRFlg8Z2Q667pCSetJShkrBWEoMHo8TunItF055auceuGkq1T1Hg7AFV_0IbdtVluive8AL29FVnK5I/pub?start=true&loop=true&delayms=3000",
+      socialMedia: "https://www.instagram.com/fisherlane26/?hl=en",
+      image: "./images/FisherLaneMobilityLogo.png",
+      width: "24%",
     },
     {
       title: "Girl Guides Victoria",
@@ -221,25 +254,6 @@ export const PORTFOLIO = {
       ],
       image: "./images/GirlGuidesVictoriaLogo.png",
       width: "100%",
-    },
-    {
-      title: "Splashbox",
-      url: "https://www.splashbox.com.au/",
-      image: "./images/SplashboxLogo.png",
-      width: "38%",
-    },
-    {
-      title: "Contact Me",
-      url: "https://www.contactme.net.au/",
-      socialMedia: "https://www.instagram.com/contactmeau/?hl=en",
-      image: "./images/ContactMeLogo.png",
-      width: "38%",
-    },
-    {
-      title: "Luson",
-      url: "https://clydenorth.luson.com.au/",
-      image: "./images/LusonLogo.png",
-      width: "24%",
     },
     {
       title: "BRIC",
@@ -294,4 +308,10 @@ export const CONTACT = {
   ],
   submitButton: "Send",
   enquirySuccessMsg: "Your enquiry has been sent. Thank you!",
+};
+
+export const FOOTER = {
+  imageAlt: "Copy That",
+  image: "title-logo.png",
+  copyright: "Copyright © AB Development",
 };

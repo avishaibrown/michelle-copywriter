@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { Container, Button } from "@mui/material";
+import { Container, Grid, Box } from "@mui/material";
 import Typography from "../components/Typography";
+import Button from "../components/Button";
 import { ABOUT } from "../utils/constants";
-import { Box } from "@mui/system";
 import { useNavigate } from "react-router";
 
 const About = () => {
@@ -14,34 +14,105 @@ const About = () => {
   }, []);
 
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4, textAlign: "center" }}>
-      <Typography variant="h4" marked="center" gutterBottom>
+    <Container
+      sx={{
+        my: { xs: 20, md: 30 },
+        alignItems: "center",
+        textAlign: "center",
+      }}
+      disableGutters
+      maxWidth={false}
+    >
+      <Typography
+        variant="h2"
+        marked="center"
+        gutterBottom
+        sx={{ fontSize: { xs: "3rem", md: "3.75rem" }, mb: 10 }}
+      >
         {ABOUT.title}
       </Typography>
-      {ABOUT.description.map((paragraph, index) => (
-        <Typography variant="body1" m={5} key={index}>
-          {paragraph}
-        </Typography>
-      ))}
-      <Button
-        variant="contained"
-        onClick={() => navigate("/contact")}
-        sx={{ textTransform: "none", mb: 5 }}
+      <Grid container mb={{ xs: 2, lg: 10 }}>
+        <Grid item xs={12} lg={5}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: { xs: "center", lg: "right" },
+            }}
+          >
+            <Box
+              component="img"
+              alt={ABOUT.title}
+              src={ABOUT.image}
+              sx={{
+                maxHeight: { xs: 500, md: 800 },
+                maxWidth: { xs: 300, md: 480 },
+              }}
+            />
+          </Box>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          lg={6}
+          sx={{ float: { xs: "none", xl: "left" }, textAlign: "left" }}
+          mx={5}
+        >
+          {ABOUT.description.map((paragraph, index) => (
+            <Typography
+              sx={{
+                typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
+              }}
+              mb={{ xs: 3, sm: 5 }}
+              mt={{ xs: 5, sm: 5, lg: 0 }}
+              key={index}
+            >
+              {paragraph}
+            </Typography>
+          ))}
+        </Grid>
+      </Grid>
+      <Box
+        component="section"
+        sx={{ display: "flex", bgcolor: "#F6F6F6", overflow: "hidden" }}
       >
-        {ABOUT.button}
-      </Button>
-      <Container sx={{ display: "flex", justifyContent: "center" }}>
-        <Box
-          component="img"
+        <Container
           sx={{
-            maxHeight: { xs: 300 },
-            maxWidth: { xs: 300 },
-            borderRadius: "100%",
+            my: { xs: 2, sm: 5, md: 10 },
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
           }}
-          alt={ABOUT.title}
-          src={ABOUT.image}
-        />
-      </Container>
+        >
+          <Box
+            component="img"
+            src="./wallpaper-curvy-lines.png"
+            alt="curvy lines"
+            sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
+          />
+          {ABOUT.callToAction.map((paragraph, index) => (
+            <Typography
+              sx={{
+                typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
+              }}
+              m={{ xs: 3, lg: 5 }}
+              key={index}
+            >
+              {paragraph}
+            </Typography>
+          ))}
+          <Button
+            variant="contained"
+            color="secondary"
+            size="large"
+            onClick={() => navigate("/contact")}
+            sx={{ textTransform: "none", my: 5 }}
+          >
+            {ABOUT.button}
+          </Button>
+        </Container>
+      </Box>
     </Container>
   );
 };

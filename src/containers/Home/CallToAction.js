@@ -24,6 +24,12 @@ const CallToAction = () => {
           height: "auto",
           py: 2,
           px: 5,
+          "&:hover": {
+            border: "4px solid #13579b",
+            color: "#13579b",
+            backgroundColor: "#D2F7FE",
+            cursor: "pointer",
+          },
         }}
         onClick={() => navigate("/contact")}
       >

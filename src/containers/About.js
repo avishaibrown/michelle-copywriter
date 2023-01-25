@@ -16,7 +16,8 @@ const About = () => {
   return (
     <Container
       sx={{
-        my: { xs: 20, md: 30 },
+        mt: { xs: 20, md: 30 },
+        mb: { md: 10 },
         alignItems: "center",
         textAlign: "center",
       }}

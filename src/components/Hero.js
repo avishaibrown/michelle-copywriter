@@ -16,51 +16,52 @@ const Hero = (props) => {
       }}
     >
       <img style={{ display: "none" }} src={image} alt="increase priority" />
-
-      <Typography
-        color="inherit"
-        align="center"
-        marked="center"
-        variant="h2"
-        sx={{
-          fontSize: { xs: "2rem", sm: "3rem", md: "4rem", lg: "5rem" },
-        }}
+      <MovingText
+        type="fadeInFromTop"
+        duration="1500ms"
+        delay="0s"
+        direction="normal"
+        timing="ease"
+        iteration="1"
+        fillMode="none"
       >
-        {title.map((line) => (
-          <MovingText
-            type="fadeInFromTop"
-            duration="1500ms"
-            delay="0s"
-            direction="normal"
-            timing="ease"
-            iteration="1"
-            fillMode="none"
+        {title.map((line, index) => (
+          <Typography
+            key={index}
+            color="inherit"
+            align="center"
+            marked={index === 0 ? "none" : "center"}
+            variant="h2"
+            sx={{
+              fontSize: { xs: "2rem", sm: "3rem", md: "4rem", lg: "5rem" },
+            }}
           >
             {line}
-          </MovingText>
+          </Typography>
         ))}
-      </Typography>
-      <Typography
-        color="inherit"
-        align="center"
-        sx={{
-          typography: { xs: "h6", md: "h5", lg: "h4" },
-          mb: 4,
-          mt: { xs: 4, sm: 6, md: 8, lg: 10 },
-        }}
+      </MovingText>
+
+      <MovingText
+        type="fadeIn"
+        duration="5000ms"
+        delay="0s"
+        direction="normal"
+        timing="ease"
+        iteration="1"
+        fillMode="none"
       >
-        <MovingText
-          type="fadeIn"
-          duration="5000ms"
-          delay="0s"
-          direction="normal"
-          timing="ease"
-          iteration="1"
-          fillMode="none"
+        <Typography
+          color="inherit"
+          align="center"
+          sx={{
+            typography: { xs: "h6", md: "h5", lg: "h4" },
+            mb: 4,
+            mt: { xs: 4, sm: 6, md: 8, lg: 10 },
+          }}
         >
           {description}
-        </MovingText>
-      </Typography>
+        </Typography>
+      </MovingText>
       <Button
         color="secondary"
         variant="contained"

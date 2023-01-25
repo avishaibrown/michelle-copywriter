@@ -21,12 +21,12 @@ const CollapsedMenu = (props) => {
 
   return (
     <>
-      <Box sx={{ display: "flex", ml: "auto" }}>
+      <Box sx={{ display: "flex", ml: "auto", mr: 2 }}>
         <IconButton
           edge="end"
-          color="inherit"
+          color="secondary"
           aria-label="menu"
-          sx={{ ml: "auto" }}
+          sx={{ ml: "auto", transform: "scale(1.2)" }}
           onClick={handleOpen}
           aria-controls={open ? "account-menu" : undefined}
           aria-haspopup="true"

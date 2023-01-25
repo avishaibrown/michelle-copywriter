@@ -3,6 +3,7 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import Typography from "../components/Typography";
 import { Container } from "@mui/material";
 import { PORTFOLIO } from "../utils/constants";
+import CallToAction from "./Home/CallToAction";
 
 const Portfolio = (props) => {
   const { isHomePage } = props;
@@ -14,8 +15,7 @@ const Portfolio = (props) => {
   return (
     <Container
       sx={{
-        my: !isHomePage && { xs: 20, md: 30 },
-        mt: isHomePage && 10,
+        mt: isHomePage ? 10 : { xs: 20, md: 30 },
         alignItems: "center",
         textAlign: "center",
       }}
@@ -31,6 +31,7 @@ const Portfolio = (props) => {
         {PORTFOLIO.title}
       </Typography>
       <FeaturedProjects projects={PORTFOLIO.projects} />
+      {!isHomePage && <CallToAction />}
     </Container>
   );
 };

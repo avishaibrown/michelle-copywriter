@@ -74,7 +74,7 @@ export const HOME = {
       {
         title: "Let's Talk",
         description:
-          "We'll hop on a call. This gives us a chance to get to know each other and I can learn more in depth about your business and your vision.",
+          "We’ll hop on a call to get to know each other. I’ll learn more about your vision and see how I can help bring it to life.",
         icon: <People fontSize="large" />,
       },
       {
@@ -112,9 +112,10 @@ export const HOME = {
 export const ABOUT = {
   title: "About",
   description: [
-    "With an academic background in Literature, History and Psychology, I bring a thorough and meticulous approach to copywriting, editing, proofreading and research. My insight into the human condition translates perfectly to understanding what drives consumers and writing for a wide variety of audiences.",
-    "I have a passion for creating highly engaging written content, specialising in short and long form writing for websites, EDMs, blog posts, brand books, press releases, Google ads, social media ads, and social media copy.",
-    "I love to work closely with clients, and take the time to truly discover your brand and business, its unique market position, as well as your goals and objectives for the future. This enables me to effectively capture and convey your message across a variety of mediums.",
+    "With an academic background in Literature, History and Psychology, and over six years experience in the industry, I have excellent insight into the human condition that translates perfectly into knowing what drives consumers.",
+    "I have a passion for creating highly engaging and creative written content, specialising in short and long form writing.",
+    "You’ll find my writing across websites, blog posts, emails, brand books, press and media releases, as well as social media copy and ads, plus Google ads.",
+    "I bring a thorough and meticulous approach to my copywriting, and my research, writing and editing skills are impeccable. I possess a nuanced understanding of English language conventions, style, usage, grammar, and punctuation, and enjoy translating complex concepts into easy to understand language, and flexibly adapting my tone of voice to suit a wide variety of audiences.",
   ],
   callToAction: [
     "Work with me today to tell your brand's story and get your message across.",
@@ -148,6 +149,7 @@ export const SERVICES = {
         "Your website will feature intuitive, UX-optimised copy that gives visitors the answers they’re looking for, fast. Content will also include Google-friendly keywords, seamlessly integrated, helping you get noticed online.",
       ],
       icon: <Web fontSize="large" />,
+      image: "./images/websites.jpg",
     },
     {
       title: SOCIAL_MEDIA,
@@ -158,6 +160,7 @@ export const SERVICES = {
         "Your copywriter can liaise with branding agencies, graphic designers, and/or your marketing team to provide copy and schedule content optimised for each platform.",
       ],
       icon: <Tag fontSize="large" />,
+      image: "./images/social-media.jpg",
     },
     {
       title: ARTICLES_AND_BLOGS,
@@ -166,6 +169,7 @@ export const SERVICES = {
         "As your copywriter, I can develop a series of blogs and articles to promote your brand and spark interest in your company’s values, mission, and key offerings. This includes researching, writing, editing, and optimising SEO for publication on the website.",
       ],
       icon: <RssFeed fontSize="large" />,
+      image: "./images/articles-and-blogs.jpg",
     },
     {
       title: AD_COPY,
@@ -174,6 +178,7 @@ export const SERVICES = {
         "Content creation for Google ads and social media ad copy will help promote your brand, products and offerings to a wider audience. This includes researching keywords to ensure ads are optimised for your audience and market category. It can also include working closely with digital marketing specialists and graphic designers to create ads in line with branding and tone of voice.",
       ],
       icon: <Newspaper fontSize="large" />,
+      image: "./images/ad-copy.jpg",
     },
     {
       title: EMAIL_NEWSLETTERS,
@@ -182,6 +187,7 @@ export const SERVICES = {
         "Email newsletter copywriting includes developing an email strategy and content calendar, liaising with your branding agency and/or graphic designers to create an email newsletter template, researching, writing, and editing e-newsletters monthly or fortnightly.",
       ],
       icon: <AlternateEmail fontSize="large" />,
+      image: "./images/email-newsletters.jpg",
     },
     {
       title: PODCASTS,
@@ -190,10 +196,12 @@ export const SERVICES = {
         "Podcast copywriting services include developing a long term podcast content plan, researching and creating podcast episode topics, content pillars, as well as researching guests, creating show notes, transcripts, and time stamps for publication via podcasting streamers and YouTube.",
       ],
       icon: <Podcasts fontSize="large" />,
+      image: "./images/podcasts.jpg",
     },
   ],
   closingRemarks:
     "Choose the copywriting and content creation services you want to prioritise right now. We can always add on at a later point!",
+  button: "More",
 };
 
 export const PORTFOLIO = {

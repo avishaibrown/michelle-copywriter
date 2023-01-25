@@ -21,7 +21,7 @@ const WhatIDo = () => {
       >
         <Box
           component="img"
-          src="./wallpaper-curvy-lines.png"
+          src="./images/wallpaper-curvy-lines.png"
           alt="curvy lines"
           sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
         />

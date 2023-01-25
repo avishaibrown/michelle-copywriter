@@ -42,7 +42,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container disableGutters maxWidth={false}>
-          <AppBar title={NAME} image="title-logo.png" menuItems={MENU_ITEMS} />
+          <AppBar title={NAME} image="./images/title-logo.png" menuItems={MENU_ITEMS} />
           {routes}
           <Footer
             image={FOOTER.image}

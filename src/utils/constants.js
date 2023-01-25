@@ -27,7 +27,7 @@ export const HOME = {
   hero: {
     titles: ["Tell your story.", "Share your message."],
     description: "Creative, punchy copy for brands & businesses.",
-    image: "intro-bg.jpg",
+    image: "./images/intro-bg.jpg",
     button: "Enquire",
   },
   whatIDo: {
@@ -60,7 +60,7 @@ export const HOME = {
     description:
       "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
     button: "Learn More",
-    image: "about-photo.jpg",
+    image: "./images/about-photo.jpg",
   },
   process: {
     title: "Work With Me",
@@ -122,7 +122,7 @@ export const ABOUT = {
     "I will weave a compelling brand narrative so your audience knows exactly who you are and what you stand for, and keeps coming back for more.",
     "Together, we’ll take your copy to the next level.",
   ],
-  image: "about-photo.jpg",
+  image: "./images/about-photo.jpg",
   button: "Contact Michelle",
 };
 
@@ -320,6 +320,6 @@ export const CONTACT = {
 
 export const FOOTER = {
   imageAlt: "Copy That",
-  image: "title-logo.png",
+  image: "./images/title-logo.png",
   copyright: "Copyright © AB Development",
 };

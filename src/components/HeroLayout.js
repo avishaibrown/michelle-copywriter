@@ -53,7 +53,7 @@ function HeroLayout(props) {
         <Background sx={sxBackground} />
         <Box
           component="img"
-          src="productHeroArrowDown.png"
+          src="./images/productHeroArrowDown.png"
           height="16"
           width="12"
           alt="arrow down"

@@ -11,6 +11,24 @@ import { CssBaseline, Container, LinearProgress } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { MENU_ITEMS, NAME, FOOTER } from "./utils/constants";
 import libreFranklin from "@fontsource/libre-franklin";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC8aFz44Hm7ttGLponx1KKErGty3Aw1HyI",
+  authDomain: "michelle-copywriter.firebaseapp.com",
+  projectId: "michelle-copywriter",
+  storageBucket: "michelle-copywriter.appspot.com",
+  messagingSenderId: "767829316987",
+  appId: "1:767829316987:web:3ca29c63bfe9db6e9559de",
+  measurementId: "G-KCEG98EHHP"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 const theme = createTheme({
   typography: {

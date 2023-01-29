@@ -73,7 +73,7 @@ const Services = () => {
                 </CardContent>
                 <CardActions>
                   <Button size="large" onClick={() => handleClick(index)}>
-                    {SERVICES.button}
+                    {SERVICES.expandButton}
                   </Button>
                 </CardActions>
               </Card>
@@ -93,6 +93,7 @@ const Services = () => {
               ? SERVICES.mediums[itemToOpen].description
               : null
           }
+          buttonText={SERVICES.collapseButton}
         />
       </Container>
       <Typography

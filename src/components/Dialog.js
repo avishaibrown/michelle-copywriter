@@ -44,32 +44,30 @@ function BootstrapDialogTitle(props) {
 }
 
 const Dialog = (props) => {
-  const { itemToOpen, setItemToOpen, title, description } = props;
+  const { itemToOpen, setItemToOpen, title, description, buttonText } = props;
 
   const handleClose = () => {
     setItemToOpen(null);
   };
 
   return (
-    <div>
-      <BootstrapDialog
-        onClose={handleClose}
-        aria-labelledby="dialog-title"
-        open={itemToOpen || itemToOpen === 0}
-      >
-        <BootstrapDialogTitle id="dialog-title" onClose={handleClose}>
-          {title}
-        </BootstrapDialogTitle>
-        <DialogContent dividers>
-          <Typography gutterBottom>{description}</Typography>
-        </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Close
-          </Button>
-        </DialogActions>
-      </BootstrapDialog>
-    </div>
+    <BootstrapDialog
+      onClose={handleClose}
+      aria-labelledby="dialog-title"
+      open={!!(itemToOpen || itemToOpen === 0)}
+    >
+      <BootstrapDialogTitle id="dialog-title" onClose={handleClose}>
+        {title}
+      </BootstrapDialogTitle>
+      <DialogContent dividers>
+        <Typography gutterBottom>{description}</Typography>
+      </DialogContent>
+      <DialogActions>
+        <Button autoFocus onClick={handleClose}>
+          {buttonText}
+        </Button>
+      </DialogActions>
+    </BootstrapDialog>
   );
 };
 

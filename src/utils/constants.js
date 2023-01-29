@@ -205,7 +205,8 @@ export const SERVICES = {
   ],
   closingRemarks:
     "Choose the copywriting and content creation services you want to prioritise right now. We can always add on at a later point!",
-  button: "More",
+  expandButton: "More",
+  collapseButton: "Close",
 };
 
 export const PORTFOLIO = {

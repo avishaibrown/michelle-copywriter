@@ -5,9 +5,9 @@ import {
   Toolbar,
   Stack,
   Divider,
+  useMediaQuery,
 } from "@mui/material";
 import CollapsedMenu from "./CollapsedMenu";
-import { mobileDetected } from "../utils/util";
 
 const AppBar = (props) => {
   const { title, image, menuItems } = props;
@@ -18,8 +18,8 @@ const AppBar = (props) => {
         <Box
           component="img"
           sx={{
-            maxHeight: { xs: 80, md: 100 },
-            maxWidth: { xs: 240, md: 300 },
+            maxHeight: { xs: 60, md: 100 },
+            maxWidth: { xs: 180, md: 300 },
             mx: { xs: 0, md: 5 },
             my: 2,
           }}
@@ -33,7 +33,7 @@ const AppBar = (props) => {
             justifyContent: "flex-end",
           }}
         >
-          {mobileDetected() ? (
+          {useMediaQuery((theme) => theme.breakpoints.down("sm")) ? (
             <CollapsedMenu menuItems={menuItems} />
           ) : (
             <Stack

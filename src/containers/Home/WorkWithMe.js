@@ -1,6 +1,7 @@
-import Timeline from "../../components/Timeline";
+import CompactTimeline from "../../components/CompactTimeline";
+import ExpandedTimeline from "../../components/ExpandedTimeline";
 import Typography from "../../components/Typography";
-import { Box, Container } from "@mui/material";
+import { Box, Container, useMediaQuery } from "@mui/material";
 import { HOME } from "../../utils/constants";
 
 const WorkWithMe = () => {
@@ -11,12 +12,13 @@ const WorkWithMe = () => {
         display: "flex",
         bgcolor: "#F6F6F6",
         overflow: "hidden",
-        background: "linear-gradient(to right, #D2F7FE 0%, #f2fafc 100%)",
+        background: "linear-gradient(to bottom, #D2F7FE 0%, #FFFFFF 100%)",
       }}
     >
       <Container
         sx={{
-          my: 10,
+          mt: 10,
+          mb: { xs: 0, sm: 10 },
           position: "relative",
           display: "flex",
           flexDirection: "column",
@@ -32,7 +34,11 @@ const WorkWithMe = () => {
         >
           {HOME.process.title}
         </Typography>
-        <Timeline items={HOME.process.steps} />
+        {useMediaQuery((theme) => theme.breakpoints.down("sm")) ? (
+          <CompactTimeline items={HOME.process.steps} />
+        ) : (
+          <ExpandedTimeline items={HOME.process.steps} />
+        )}
       </Container>
     </Box>
   );

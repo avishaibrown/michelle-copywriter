@@ -12,15 +12,19 @@ import {
   FitnessCenter,
   Celebration,
   Business,
+  Home,
+  Face3,
+  DesignServices,
+  PermMedia,
 } from "@mui/icons-material";
 
 export const NAME = "Michelle Sky";
 export const MENU_ITEMS = [
-  { title: "Home", link: "/" },
-  { title: "About", link: "/about" },
-  { title: "Services", link: "/services" },
-  { title: "Portfolio", link: "/portfolio" },
-  { title: "Contact", link: "/contact" },
+  { title: "Home", link: "/", icon: <Home /> },
+  { title: "About", link: "/about", icon: <Face3 /> },
+  { title: "Services", link: "/services", icon: <DesignServices /> },
+  { title: "Portfolio", link: "/portfolio", icon: <PermMedia /> },
+  { title: "Contact", link: "/contact", icon: <Email /> },
 ];
 
 export const HOME = {

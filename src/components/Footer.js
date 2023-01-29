@@ -5,7 +5,10 @@ const Footer = (props) => {
   const { image, imageAlt, copyright } = props;
 
   return (
-    <Box component="footer" sx={{ py: 4, textAlign: "center" }}>
+    <Box
+      component="footer"
+      sx={{ py: 4, textAlign: "center", backgroundColor: "#D2F7FE" }}
+    >
       <Box
         component="img"
         alt={imageAlt}

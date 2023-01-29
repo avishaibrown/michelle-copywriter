@@ -1,7 +1,7 @@
 import React from "react";
 import { Paper } from "@mui/material";
 import {
-  Timeline as MuiTimeline,
+  Timeline,
   TimelineItem,
   TimelineSeparator,
   TimelineConnector,
@@ -10,11 +10,11 @@ import {
 } from "@mui/lab";
 import Typography from "./Typography";
 
-const Timeline = (props) => {
+const ExpandedTimeline = (props) => {
   const { items } = props;
 
   return (
-    <MuiTimeline position="alternate">
+    <Timeline position="alternate">
       {items.map((item, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator>
@@ -47,8 +47,8 @@ const Timeline = (props) => {
           </TimelineContent>
         </TimelineItem>
       ))}
-    </MuiTimeline>
+    </Timeline>
   );
 };
 
-export default Timeline;
+export default ExpandedTimeline;

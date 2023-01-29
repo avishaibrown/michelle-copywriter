@@ -1,7 +1,3 @@
-export const mobileDetected = () => {
-  return window.innerWidth <= 800;
-};
-
 export const updateObject = (oldObject, updatedProperties) => {
   return {
     ...oldObject,

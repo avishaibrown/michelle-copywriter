@@ -38,21 +38,24 @@ const HomeAbout = () => {
         <Grid item xs={12} lg={7} sx={{ float: { xs: "none", xl: "left" } }}>
           <Typography
             mx={5}
-            my={{ xs: 5, sm: 3, md: 0 }}
+            my={{ xs: 5, sm: 3, lg: 0 }}
             sx={{
               typography: { xs: "h6", sm: "h4", lg: "h3", xl: "h2" },
             }}
           >
             {HOME.about.title}
           </Typography>
-          <Typography
-            m={5}
-            sx={{
-              typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
-            }}
-          >
-            {HOME.about.description}
-          </Typography>
+          {HOME.about.description.map((item, index) => (
+            <Typography
+              key={index}
+              m={5}
+              sx={{
+                typography: { xs: "body1", sm: "h6", lg: "h6", xl: "h5" },
+              }}
+            >
+              {item}
+            </Typography>
+          ))}
           <Button
             color="secondary"
             variant="contained"

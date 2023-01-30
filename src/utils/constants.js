@@ -61,8 +61,10 @@ export const HOME = {
   },
   about: {
     title: "Hi, I’m Michelle.",
-    description:
-      "As a Communications & Marketing Strategist with roles across agency, not-for-profit, B2B and Arts organisations, my passion truly lies in Copywriting, Content Creation and Brand Storytelling. My experience both client-side and in the agency world has imbued me with the skills to immerse myself and delve deeply into projects, while giving me great scope and the ability to balance competing priorities, always delivering to deadline.",
+    description: [
+      "After years in Communications and Marketing, I discovered my true passion and my writing niche: helping brands and businesses evolve their story!",
+      "Every business has a unique brand narrative that sets them apart - it's what helps them stand out in the market and attract their ideal audience. I love taking the time to discover exactly what that is, and help weave a powerful brand narrative across all things copy - web, social, branding and marketing collateral, and more.",
+    ],
     button: "Learn More",
     image: "./images/about-photo.jpg",
   },

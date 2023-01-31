@@ -216,7 +216,7 @@ export const PORTFOLIO = {
   projects: [
     {
       title: "FRÉ",
-      url: "https://www.freskincare.com/en-au",
+      url: "Fre-brand-blueprint.pdf",
       image: "./images/FreLogo.webp",
       width: "100%",
     },

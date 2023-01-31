@@ -215,6 +215,12 @@ export const PORTFOLIO = {
   title: "Portfolio",
   projects: [
     {
+      title: "FRÉ",
+      url: "https://www.freskincare.com/en-au",
+      image: "./images/FreLogo.webp",
+      width: "100%",
+    },
+    {
       title: "Luson",
       url: "https://clydenorth.luson.com.au/",
       image: "./images/LusonLogo.png",
@@ -251,24 +257,6 @@ export const PORTFOLIO = {
       socialMedia: "https://www.instagram.com/fisherlane26/?hl=en",
       image: "./images/FisherLaneMobilityLogo.png",
       width: "24%",
-    },
-    {
-      title: "Girl Guides Victoria",
-      url: "https://www.guidesvic.org.au/",
-      marketing: [
-        "https://mailchi.mp/guidesvic/guidingnews20201113",
-        "https://mailchi.mp/guidesvic/7-september-update",
-        "https://www.guidesvic.org.au/2020/05/24/guiding-in-victoria-frequently-asked-questions/",
-        "https://mailchi.mp/4e5978407fed/quick-links-edition8",
-        "https://www.guidesvic.org.au/2019/07/19/melton-girl-guides-help-grow-the-melton-botanic-garden/",
-        "https://www.guidesvic.org.au/2020/07/03/girl-guides-victoria-live-the-promise-through-covid-19/",
-        "https://www.guidesvic.org.au/wp-content/uploads/2020/10/Covid-Safe-Principles-v2.pdf",
-        "https://www.guidesvic.org.au/wp-content/uploads/2020/06/Social-Distancing-Poster-colour.pdf",
-        "https://www.guidesvic.org.au/wp-content/uploads/2020/06/Return-to-in-person-Girl-Guides-Poster-colour-T4.pdf",
-        "https://www.guidesvic.org.au/?p=1519",
-      ],
-      image: "./images/GirlGuidesVictoriaLogo.png",
-      width: "100%",
     },
     {
       title: "BRIC",

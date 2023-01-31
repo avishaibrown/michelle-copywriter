@@ -12,7 +12,12 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <Container component="section" disableGutters maxWidth={false}>
+    <Container
+      component="section"
+      disableGutters
+      maxWidth={false}
+      sx={{ mt: { xs: 6, md: 12 } }}
+    >
       <Hero
         title={HOME.hero.titles}
         description={HOME.hero.description}

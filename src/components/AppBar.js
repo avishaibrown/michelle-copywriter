@@ -21,7 +21,6 @@ const AppBar = (props) => {
             maxHeight: { xs: 60, md: 100 },
             maxWidth: { xs: 180, md: 300 },
             mx: { xs: 0, md: 5 },
-            my: 2,
           }}
           alt={title}
           src={image}
